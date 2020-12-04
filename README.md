@@ -20,6 +20,16 @@ Uno Platform  测试app  https://platform.uno/docs/articles/getting-started-tuto
 | MacOS | \_\_MACOS\_\_ |  |
 | Skia | \_\_SKIA\_\_ |  |
 
+```
+#if __ANDROID__
+using _View = Android.Views.View;
+#elif __IOS__
+using _View = UIKit.UIView;
+#else
+using _View = Windows.UI.Xaml.UIElement;
+#endif
+```
+
 5. [多平台实现的分部类,比一大堆#if更优美,例如 NativeWrapperControl.cs , NativeWrapperControl.Android.cs, 类似razor代码后置](https://platform.uno/docs/articles/platform-specific-csharp.html)
 
 6. [多平台显示不同文本,类似xamarin form](https://platform.uno/docs/articles/platform-specific-xaml.html)
