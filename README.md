@@ -14,11 +14,11 @@ Uno Platform  测试app  https://platform.uno/docs/articles/getting-started-tuto
 | Platform | Symbol | 备注 |
 | :----:| :----: | :----: |
 | UWP | NETFX_CORE | 旧版为(WINDOWS_UWP) |
-| iOS | __ IOS __ |  |
-| Android | __ ANDROID __ |  |
-| WebAssembly | __ WASM __ |  |
-| MacOS | __ MACOS __ |  |
-| Skia | __ SKIA __ |  |
+| iOS | \__IOS__ |  |
+| Android | \__ANDROID__ |  |
+| WebAssembly | \__WASM__ |  |
+| MacOS | \__MACOS__ |  |
+| Skia | \__SKIA__ |  |
 
 5. [多平台实现的分部类,比一大堆#if更优美,例如 NativeWrapperControl.cs , NativeWrapperControl.Android.cs, 类似razor代码后置](https://platform.uno/docs/articles/platform-specific-csharp.html)
 
